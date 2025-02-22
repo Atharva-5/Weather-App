@@ -62,11 +62,41 @@ input {
 
 ;
 
+/*Weather background changes*/
+.background-default {
+    background: linear-gradient(to bottom, #ffffff, #63b9ff);
+    transition: background 0.5s ease-in-out;
+}
+
+.background-clear {
+    background: linear-gradient(to bottom, #ffd900e1, #ffa600d6);
+    transition: background 0.5s ease-in-out;
+    /* Sunny */
+}
+
+.background-clouds {
+    background: linear-gradient(to bottom, #B0C4DE, #708090);
+    transition: background 0.5s ease-in-out;
+    /* Cloudy */
+}
+
+.background-rain {
+    background: linear-gradient(to bottom, #778899, #2F4F4F);
+    transition: background 0.5s ease-in-out;
+    /* Rainy */
+}
+
+.background-snow {
+    background: linear-gradient(to bottom, #FFFFFF, #B0E0E6);
+    transition: background 0.5s ease-in-out;
+    /* Snowy */
+}
+
 
 button {
     padding: 10px 15px;
-    background: linear-gradient(180deg, rgb(0, 132, 255), rgba(255, 255, 255, 0.552));
-    color: black;
+    background: rgb(0, 77, 145);
+    color: white;
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -74,7 +104,8 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background: #b9dbffd0;
+    color: black;
 }
 
 /* Weather Info */
@@ -90,7 +121,7 @@ button:hover {
 
 .weather-info p {
     font-size: 22px;
-    color: rgba(0, 60, 139, 0.694);
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 
